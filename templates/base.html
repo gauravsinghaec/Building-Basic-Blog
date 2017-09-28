@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/main.css">
+	<title>A Seesaw Blog!</title>
+</head>
+<body>
+	<div id="main" >
+	<header id="blog-top">
+		<h1><a href="/blog">Seesaw Blog</a>	</h1>
+	</header>
+		<div class="loginlogout">
+		<p>
+		{% if UserLogin != 'login' %}
+		<a href="/blog">{{ UserLogin }}</a>
+		{% else %}
+		<a href="/blog/login">{{ UserLogin }}</a>
+		{% endif %}	| <a href="/blog/{{LogoutSignup}}">{{ LogoutSignup }}</a>		
+		</p>
+		</div>	
+	{% block content %}
+	{% endblock %}
+		<div class="loginlogout"> Queried {{ trackRefresh }} seconds ago</div>
+	<footer>
+		<h1><a href="https://www.facebook.com/seesawstory/">Follow Seesaw on Facebook</a>	</h1>
+	</footer>	
+	</div>
+</body>
+</html>

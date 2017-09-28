@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}		
+	<div class="submitlink">
+		{% if UserLogin != 'login' %}
+		<a class="newpost" href="/blog/newpost">Submit New Post</a>
+		{% else %}
+		<a class="newpost" href="/blog/login">Login to Add Post</a>
+		{% endif %}
+	</div>
+	<div class="blogposts" >	
+	{% for post in blogposts %} 
+		{{ post.render() | safe }}
+		<br>
+	{% endfor %}
+	</div>
+
+{% endblock %}

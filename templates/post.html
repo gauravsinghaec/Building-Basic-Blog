@@ -1,0 +1,12 @@
+	{% if blogposts %}		
+		<article>
+			<header class="post-header">
+				<p id="post-date">{{ blogposts.created.strftime("%b %d, %Y") }}</p> 
+				<p id="post-title"> <a href="/blog/{{blogposts.key().id()}}">{{ blogposts.subject }}</a></p> 
+
+			</header>				
+			<div class="post-content">
+				<pre  >{{ blogposts.content }}</pre> 
+			</div>
+		</article>
+	{% endif %}
