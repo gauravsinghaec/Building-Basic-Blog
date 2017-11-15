@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/static/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/static/main.css">
 	<title>A Seesaw Blog!</title>
 </head>
 <body>
-	<div id="main" >
+	<div class="container">
+	<div id="main" class="row">
 	<header id="blog-top">
 		<h1><a href="/blog">Seesaw Blog</a>	</h1>
 	</header>
-		<div class="loginlogout">
-		<p>
+		<div class="row loginlogout"> 
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		{% if UserLogin != 'login' %}
 		<a href="/blog">{{ UserLogin }}</a>
 		{% else %}
 		<a href="/blog/login">{{ UserLogin }}</a>
 		{% endif %}	| <a href="/blog/{{LogoutSignup}}">{{ LogoutSignup }}</a>		
-		</p>
+		</div>
 		</div>	
 	{% block content %}
 	{% endblock %}
@@ -24,6 +27,7 @@
 	<footer>
 		<h1><a href="https://www.facebook.com/seesawstory/">Follow Seesaw on Facebook</a>	</h1>
 	</footer>	
+	</div>
 	</div>
 </body>
 </html>

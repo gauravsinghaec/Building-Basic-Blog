@@ -1,12 +1,17 @@
 	{% if blogposts %}		
-		<article>
-			<header class="post-header">
-				<p id="post-date">{{ blogposts.created.strftime("%b %d, %Y") }}</p> 
+	<div class="row post-header">
+		<div class="col-lg-6 col-md-5 col-sm-6 col-xs-6 text-left">	
 				<p id="post-title"> <a href="/blog/{{blogposts.key().id()}}">{{ blogposts.subject }}</a></p> 
-
-			</header>				
+		</div>		
+		<div class="col-lg-6 col-md-5 col-sm-6 col-xs-6 text-right">
+				<p id="post-date">{{ blogposts.created.strftime("%b %d, %Y") }}</p> 
+		</div>
+	</div>		
+	<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">			
 			<div class="post-content">
 				<pre  >{{ blogposts.content }}</pre> 
 			</div>
-		</article>
+	</div>
+	</div>
 	{% endif %}

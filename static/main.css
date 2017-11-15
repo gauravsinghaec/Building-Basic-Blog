@@ -2,70 +2,6 @@ body {
     font-size: 90%;
 }
 
-#main{
-    background-color: #FFB6C1;
-    margin: 0 15%;
-}
-
-.blogposts, form , .welcome{
-    margin: 0% 9%;
-    padding: 2%;
-    font-family: monospace;
-}
-
-
-header#blog-top h1,footer{
-    padding: 3%;
-    background-color: #DDDDDD;
-    text-align: center;
-    font-family: cursive;
-}
-
-.submitlink{
-    position: relative;
-    left: 2.5%;
-
-}
-
-header#blog-top h1 a{
-    background-color: transparent;
-    outline: none;
-}
-
-.loginlogout{
-    position: relative;
-    left: 80%
-}
-
-article header p#post-title{
-    font-size: 1.5em;
-    font-weight: bolder;
-    padding-bottom:  0%;
-    margin-bottom:  0%;
-    border-bottom: solid medium black;
-}
-
-article header p#post-title a{
-    margin-left: 0%;
-    padding-left: 0%;
- }
-article header p#post-date{
-    /*position: relative;*/
-    /*left: 82%;*/
-    color: #444444;
-    margin-top:  0%;
-    padding-top:  0%;
-    float: right;
-}
-
-article div.post-content pre{
-    margin-top: 0%;
-    padding-top: 0%;
-    font-size: 1.3em;
-    width:50%; 
-    word-wrap:break-word;
-}
-
 a{
     text-decoration: none;
     padding: 1%;
@@ -88,50 +24,89 @@ a:hover{
     background-color: #FF69B4;
 }
 
-a.newpost{
-    margin-left: 8%;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
 .error {
     color: red;
 }
 
 label {
   display: block;
-  font-size: 20px;
+  font-size: 0.8em;
 }
 
-label + label {
-    margin-top: 20px;
+form{
+    font-size: medium;
 }
 
-input[type=text] {
+#main{
+    background-color: #FFB6C1;
+    margin: 0 0.8em;
 }
 
-pre {
+
+.blogposts , .welcome{
+    margin: 0% 9%;
+    padding: 2%;
+    font-family: monospace;
 }
 
-input[type=submit] {
+
+.loginlogout{
+    font-size: 1.5em;
+    position: relative;
+    left: 45vw
 }
 
-.main-title {
-}
 
-.post + .post {
-    margin-top: 15px;
-}
-
-.post-heading {
-}
-
-.post-title {
-}
-
-.post-date {
+.submitlink{
+    font-size: 1.5em;
+    position: relative;
+    left: 2.5%;
 
 }
 
-.post-content {
+header#blog-top h1,footer{
+    padding: 3%;
+    background-color: #DDDDDD;
+    text-align: center;
+    font-family: cursive;
 }
+
+header#blog-top h1 a{
+    background-color: transparent;
+    outline: none;
+}
+
+
+div .post-header{
+    border-bottom: solid medium black;
+}
+
+div p#post-title{
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding-bottom:  0%;
+    margin-bottom:  0%;
+    margin-left: 0%;
+    padding-left: 0%;
+ }
+div p#post-date{
+    /*position: relative;*/
+    /*left: 82%;*/
+    color: #111111;
+    margin-bottom:  0%;
+    padding-bottom:  0%;
+}
+
+div .post-content pre{
+    margin-top: 0%;
+    padding-top: 0%;
+    font-size: 1.3em;
+}
+
+
+a.newpost{
+    margin-left: 8%;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
